@@ -51,23 +51,28 @@ namespace PythagorasTheoremCalculator
 
         private void Calculation()
         {
+            // Check which sides are provided and calculate the missing one
             if (Attitude && Base && !Hypotenuse)
             {
+                // Calculate the missing Hypotenuse side based on the Attitude && Base
                 hypotenuse = Math.Sqrt(Math.Pow(attitude, 2) + Math.Pow(baselg, 2));
                 HypotenuseTB.Text = hypotenuse.ToString();
             }
             else if (Hypotenuse && Base && !Attitude)
             {
+                // Calculate the missing Attitude side based on the Hypotenuse && Base
                 attitude = Math.Sqrt(Math.Pow(hypotenuse, 2) - Math.Pow(baselg, 2));
                 AttitudeTB.Text = attitude.ToString();
             }
             else if (Hypotenuse && Attitude && !Base)
             {
+                // Calculate the missing Base side based on the Hypotenuse && Attitude
                 baselg = Math.Sqrt(Math.Pow(hypotenuse, 2) - Math.Pow(attitude, 2));
                 BaseTB.Text = baselg.ToString();
             }
         }
 
+        // Clear the text boxes when the Clear button is clicked
         private void ClearTB_Click(object sender, EventArgs e)
         {
             AttitudeTB.Clear();
