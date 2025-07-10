@@ -1,1 +1,1 @@
-# Pythagora's Theorem Calculator
+# PythagorasTheoremCalculator
