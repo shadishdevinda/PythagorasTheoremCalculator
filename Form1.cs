@@ -27,8 +27,7 @@ namespace PythagorasTheoremCalculator
 
             if (isTwoSides == 3)
             {
-                MessageBox.Show("All sides are provided.", "Input Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                CheckValues();
             }
             else if (isTwoSides == 2)
             {
@@ -69,6 +68,19 @@ namespace PythagorasTheoremCalculator
                 // Calculate the missing Base side based on the Hypotenuse && Attitude
                 baselg = Math.Sqrt(Math.Pow(hypotenuse, 2) - Math.Pow(attitude, 2));
                 BaseTB.Text = baselg.ToString();
+            }
+        }
+
+        //If all sides are provided, check the provided values are correct or not
+        private void CheckValues()
+        {
+            if (Math.Abs(Math.Pow(attitude, 2) + Math.Pow(baselg, 2) - Math.Pow(hypotenuse, 2)) < 1e-10)
+            {
+                MessageBox.Show("3 Sides are provided and the provided values are correct.", "Input Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("The provided values do not satisfy Pythagorean theorem.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
