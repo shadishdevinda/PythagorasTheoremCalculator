@@ -80,7 +80,7 @@ namespace PythagorasTheoremCalculator
             }
             else
             {
-                MessageBox.Show("The provided values do not satisfy Pythagorean theorem.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("The provided values do not satisfy Pythagora's theorem.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
