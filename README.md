@@ -6,7 +6,7 @@ A simple Windows Forms application that calculates the missing side of a right-a
 
 ### Main UI
 
-![Main UI](<img width="637" height="312" alt="image" src="https://github.com/user-attachments/assets/1f6b36e8-bc05-48e9-a72c-228ada5884dd" />)
+(<img width="637" height="312" alt="image" src="https://github.com/user-attachments/assets/1f6b36e8-bc05-48e9-a72c-228ada5884dd" />)
 
 [Other UI]
 (
@@ -20,7 +20,7 @@ A simple Windows Forms application that calculates the missing side of a right-a
 
 ## ⚙️ Features
 
-- Calculate missing side when 2 sides are known
+- Calculate the missing side when 2 sides are known
 - Input validation and error handling
 - Clear/reset fields
 - User-friendly GUI
