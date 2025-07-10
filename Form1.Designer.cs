@@ -130,6 +130,7 @@
             Controls.Add(InputTrianglePB);
             Controls.Add(PythagorasTheoremLable);
             Controls.Add(PythagorasTheoremPB);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PythagorasTheoremCalculator";
             Text = "Pythagoras Theorem Calculator";
             ((System.ComponentModel.ISupportInitialize)PythagorasTheoremPB).EndInit();
