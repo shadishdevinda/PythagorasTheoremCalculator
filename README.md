@@ -33,7 +33,5 @@ A simple Windows Forms application that calculates the missing side of a right-a
 
 > .NET Framework required (e.g., 4.7.2 or higher)
 
----
 
-## 📁 Project Structure
 
