@@ -74,7 +74,7 @@ namespace PythagorasTheoremCalculator
         //If all sides are provided, check the provided values are correct or not
         private void CheckValues()
         {
-            if (Math.Abs(Math.Pow(attitude, 2) + Math.Pow(baselg, 2) - Math.Pow(hypotenuse, 2)) < 1e-10)
+            if (Math.Pow(attitude, 2) + Math.Pow(baselg, 2) == Math.Pow(hypotenuse, 2))
             {
                 MessageBox.Show("3 Sides are provided and the provided values are correct.", "Input Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
